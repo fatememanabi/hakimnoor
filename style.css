@@ -1,12 +1,107 @@
+@font-face {
+	font-family: dana;
+	font-style: normal;
+	font-weight: 10;
+	src: url('../woff2/Dana-Hairline.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('../woff/Dana-Hairline.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+	font-family: dana;
+	font-style: normal;
+	font-weight: 100;
+	src: url('../woff2/Dana-Thin.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('../woff/Dana-Thin.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+	font-family: dana;
+	font-style: normal;
+	font-weight: 200;
+	src: url('../woff2/Dana-UltraLight.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('../woff/Dana-UltraLight.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+	font-family: dana;
+	font-style: normal;
+	font-weight: 300;
+	src: url('../woff2/Dana-Light.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('../woff/Dana-Light.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+	font-family: dana;
+	font-style: normal;
+	font-weight: 500;
+	src: url('../woff2/Dana-Medium.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('../woff/Dana-Medium.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+	font-family: dana;
+	font-style: normal;
+	font-weight: 600;
+	src: url('../woff2/Dana-DemiBold.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('../woff/Dana-DemiBold.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+	font-family: dana;
+	font-style: normal;
+	font-weight: 800;
+	src: url('../woff2/Dana-ExtraBold.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('../woff/Dana-ExtraBold.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+	font-family: dana;
+	font-style: normal;
+	font-weight: 900;
+	src: url('../woff2/Dana-Black.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('../woff/Dana-Black.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+	font-family: dana;
+	font-style: normal;
+	font-weight: 930;
+	src: url('../woff2/Dana-ExtraBlack.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('../woff/Dana-ExtraBlack.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+	font-family: dana;
+	font-style: normal;
+	font-weight: 960;
+	src: url('../woff2/Dana-Heavy.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('../woff/Dana-Heavy.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+	font-family: dana;
+	font-style: normal;
+	font-weight: 990;
+	src: url('../woff2/Dana-Fat.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('../woff/Dana-Fat.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+	font-family: dana;
+	font-style: normal;
+	font-weight: bold;
+	src: url('../woff2/Dana-Bold.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('../woff/Dana-Bold.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+	font-family: dana;
+	font-style: normal;
+	font-weight: normal;
+	src: url('../woff2/Dana-Regular.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('../woff/Dana-Regular.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "dana";
+    width: 1600px;
 }
 
 body {
     font-family: 'Tahoma', sans-serif;
 }
+
 
 .menuOne {
     display: flex;
@@ -16,7 +111,8 @@ body {
     background-color: #f8f9fa;
     border-bottom: 1px solid #ddd;
     height: 100px;
-    /* width: 1600px; */
+    /* width: 1224px; */
+
 }
 
 .logo img {
@@ -182,6 +278,167 @@ body {
     object-fit: cover; /* برای مطابقت تصویر با ابعاد بنر */
 }
 
+/* محصولات */
+
+.products-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.products-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.products-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.carousel-controls {
+    display: flex;
+    gap: 10px;
+}
+
+.carousel-controls .arrow {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.products-carousel {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-box {
+    width: 23%;
+    background-color: white;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.top-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.installment {
+    background-color: #ffcc00;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.discount-timer {
+    background-color: #ff5733;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.product-image img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.color-options {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.color-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+}
+
+.product-title {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.price-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price-original {
+    text-decoration: line-through;
+    color: #888;
+    font-size: 14px;
+}
+
+.price-discounted {
+    color: #e74c3c;
+    font-size: 18px;
+    font-weight: bold;
+}
+.products-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse; /* جای چپ و راست را عوض می‌کند */
+    margin-bottom: 20px;
+}
+
+.products-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.carousel-controls {
+    display: flex;
+    gap: 10px;
+}
+
+.carousel-controls .arrow {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.price-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price-original {
+    text-decoration: line-through;
+    color: #888;
+    font-size: 14px;
+}
+
+.price-discounted {
+    color: #e74c3c;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.discount-percentage {
+    color: #ffcc00; /* رنگ برای درصد تخفیف */
+    font-size: 16px;
+    margin-left: 10px; /* فاصله بین قیمت تخفیف خورده و درصد */
+}
+span.discount-percentage {
+    border: 1px solid #000;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+
 /* three box */
 .box-section {
     display: flex;
@@ -240,6 +497,7 @@ body {
     justify-content: space-between;
     align-items: center;
     /* width: 1600px; */
+    width: 1224px;
     margin: 20px auto;
     padding: 20px;
     background-color: #f8f9fa;
@@ -441,4 +699,381 @@ button:hover {
     margin-top: 10px; /* فاصله بین آیکن و متن */
     font-size: 16px; /* اندازه متن */
     color: #333; /* رنگ متن */
+}
+
+/* بیمه های طرف قرارداد */
+
+.insurance-section {
+    text-align: center;
+    background-color: #f8f9fa;
+    padding: 10px 0;
+    height: 142px; /* ارتفاع کل سکشن */
+}
+
+.insurance-section h2 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    text-align: right;
+}
+
+.insurance-logos {
+    display: flex;
+    justify-content: space-around; /* فاصله بین لوگوها */
+    align-items: center; /* وسط‌چین عمودی */
+}
+
+.logo-box {
+    width: 100px; /* عرض هر باکس لوگو */
+}
+
+.logo-box img {
+    width: 100%; /* عرض تصویر برای پر کردن باکس */
+    height: auto; /* ارتفاع خودکار */
+}
+
+
+/* مقالات */
+
+.articles-section {
+    display: flex;
+    justify-content: space-between; /* فاصله بین باکس‌ها */
+    margin: 40px 0;
+}
+
+.article-box {
+    background-color: #f4f4f4;
+    width: 23%; /* هر باکس 23% عرض دارد تا 4 باکس کنار هم جا بگیرد */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    height: 438px; /* ارتفاع هر باکس */
+}
+
+.article-box img {
+    width: 100%;
+    height: 200px; /* تنظیم ارتفاع برای تصاویر */
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.article-box h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.article-box p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.read-more-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.read-more-btn:hover {
+    background-color: #0056b3;
+}
+
+/* حکیم نور کجاست؟ */
+
+.hakim-noor-section {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    margin: 40px 0;
+    border-radius: 8px;
+}
+
+.hakim-noor-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+.image-row {
+    display: flex;
+    justify-content: space-around; /* فاصله یکنواخت بین تصاویر */
+    margin-bottom: 20px;
+}
+
+.image-box {
+    width: 23%; /* عرض هر باکس برای نمایش چهار عکس در یک ردیف */
+}
+
+.image-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* سایه برای تصاویر */
+}
+
+.description {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+    padding: 0 10px; /* فاصله داخلی برای متن */
+}
+
+.read-more .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.read-more .btn:hover {
+    background-color: #0056b3;
+}
+
+/* فوتر */
+
+.footer-section {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid #444;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-top-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    padding: 10px;
+}
+
+.footer-logo img {
+    width: 100px;
+    height: auto;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 24px;
+    margin-right: 15px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ffcc00;
+}
+
+.footer-contact {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+.footer-contact div {
+    display: flex;
+    align-items: center;
+}
+
+.footer-contact i {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-column {
+    flex: 1;
+    padding: 10px;
+}
+
+.footer-column h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: #ffcc00;
+}
+
+.footer-column ul li i {
+    margin-right: 8px;
+}
+
+.footer-column.enamad i {
+    font-size: 36px;
+    color: #ffcc00;
+}
+
+.footer-column.products {
+    text-align: right;
+}
+.footer-column.useful-links {
+    text-align: right;
+}
+
+.footer-column.enamad {
+    text-align: center;
+}
+
+/* تنظیمات ریسپانسیو برای موبایل و تبلت */
+@media only screen and (max-width: 768px) {
+    .menuOne {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+    
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .menu ul li {
+        margin: 10px 0;
+    }
+
+    .category-list {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    .category-item {
+        margin: 10px 0;
+        width: 90%; /* عرض بیشتر برای موبایل */
+    }
+
+    .banner-section {
+        flex-direction: column;
+        margin: 10px 0;
+    }
+
+    .banner1, .banner2 {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .products-carousel {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .product-box {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+
+    .box-section {
+        flex-direction: column;
+        margin: 10px 0;
+    }
+
+    .box {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .two-column-section {
+        flex-direction: column;
+    }
+
+    .left-column, .right-column {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .faq-section, .carousel-section, .icon-section, .articles-section, .hakim-noor-section {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    .articles-section {
+        flex-wrap: wrap;
+    }
+
+    .article-box {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    .image-row {
+        flex-direction: column;
+    }
+
+    .image-box {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .footer-top-row {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .menuOne {
+        padding: 5px;
+    }
+
+    .menu ul li a {
+        font-size: 14px;
+    }
+
+    .category-item {
+        font-size: 14px;
+    }
+
+    .product-box {
+        width: 90%;
+    }
+
+    .box {
+        padding: 10px;
+    }
+
+    .footer-section {
+        padding: 10px;
+        text-align: center;
+    }
 }
