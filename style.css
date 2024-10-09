@@ -91,11 +91,13 @@
 }
 
 * {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
     font-family: "dana";
-    width: 1600px;
+    max-width: 1600px;
+    /* width: 1600px; */
+    direction: rtl;
 }
 
 body {
@@ -111,7 +113,7 @@ body {
     background-color: #f8f9fa;
     border-bottom: 1px solid #ddd;
     height: 100px;
-    /* width: 1224px; */
+    /* max-width: 1224px; */
 
 }
 
@@ -119,9 +121,14 @@ body {
     height: 50px;
 }
 
+.menu{
+    
+}
+
 .menu ul {
     display: flex;
     list-style: none;
+    align-items: left;
 }
 
 .menu ul li {
@@ -131,33 +138,46 @@ body {
 .menu ul li a {
     text-decoration: none;
     color: #333;
-    font-weight: bold;
+    font-weight: medium;
+    font-size: 16px;
 }
 
 .actions {
     display: flex;
     align-items: center;
+    
+}
+
+.fas.fa-shopping-cart{
+margin-left: 18px;
+}
+
+.fas.fa-search{
+    margin-right: 15px;
 }
 
 .actions .icon {
     font-size: 20px;
     margin-right: 15px;
+    margin-left: 20px;
     text-decoration: none;
     color: #333;
 }
 
 .actions .login-btn {
     padding: 5px 15px;
-    background-color: #007bff;
-    color: #fff;
+    background-color: transparent;
+    color: #000;
+    font-size: 16px;
+    border: 1px solid #000;
     text-decoration: none;
     border-radius: 5px;
-    font-weight: bold;
+    font-weight: medium;
 }
 
-.actions .login-btn:hover {
+/* .actions .login-btn:hover {
     background-color: #0056b3;
-}
+} */
 
 .category-list {
     display: flex;
@@ -174,7 +194,8 @@ body {
     background-color: #f8f9fa;
     border: 1px solid #ddd;
     border-radius: 5px;
-    font-weight: bold;
+    font-weight: medium;
+    font-size: 16px;
     color: #333;
     cursor: pointer;
     transition: background-color 0.3s;
@@ -200,6 +221,7 @@ body {
     justify-content: space-between;
     list-style: none;
     padding: 10px 0;
+  
 }
 
 .submenu ul li {
@@ -209,16 +231,17 @@ body {
 .submenu ul li a {
     text-decoration: none;
     color: #333;
-    font-weight: bold;
     padding: 10px 15px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
+    /* border-radius: 5px; */
+    /* transition: background-color 0.3s; */
+    font-size: 16px;
+    font-weight: medium;
 }
 
-.submenu ul li a:hover {
+/* .submenu ul li a:hover {
     background-color: #007bff;
     color: white;
-}
+} */
 
 /* main */
 .slider {
@@ -227,6 +250,7 @@ body {
     margin: 0 auto;
     position: relative;
     overflow: hidden;
+
 }
 
 .slide {
@@ -251,6 +275,7 @@ body {
 
 /* banners */
 .banner-section {
+    max-width: 1224px;
     display: flex;
     justify-content: space-between;
     /* width: 1600px; */
@@ -262,14 +287,14 @@ body {
     height: 200px;
     background-color: #f0f0f0; /* برای زمانی که تصویر بارگذاری نشود */
     border-radius: 8px;
-    margin-left: 24px;
+    /* margin-left: 26px; */
 }
 .banner2 {
     width: 599px;
     height: 200px;
     background-color: #f0f0f0; /* برای زمانی که تصویر بارگذاری نشود */
     border-radius: 8px;
-    margin-right: 24px;
+    /* margin-right: 24px; */
 }
 
 .banner img {
@@ -280,7 +305,7 @@ body {
 
 /* محصولات */
 
-.products-section {
+/* .products-section {
     padding: 20px;
     background-color: #f9f9f9;
 }
@@ -390,7 +415,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-direction: row-reverse; /* جای چپ و راست را عوض می‌کند */
+    flex-direction: row-reverse; 
     margin-bottom: 20px;
 }
 
@@ -428,76 +453,177 @@ body {
 }
 
 .discount-percentage {
-    color: #ffcc00; /* رنگ برای درصد تخفیف */
-    font-size: 16px;
-    margin-left: 10px; /* فاصله بین قیمت تخفیف خورده و درصد */
+    color: #ffcc00; 
+    font-size: 16px;د
+    margin-left: 10px; 
 }
 span.discount-percentage {
     border: 1px solid #000;
     padding: 2px;
     border-radius: 5px;
 }
+ */
 
+
+ .mahsoulat h2{
+    margin-top: 80px;
+    margin-bottom: 40px;
+    text-align: right;
+ }
+
+ .product-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+
+.product-box {
+    height: 428px;
+    width: 23%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    /* padding: 15px; */
+}
+
+/* .box-section {
+    margin-bottom: 15px;
+} */
+
+.box-section.installment-timer {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+
+.product-image img {
+    width: 40%;
+    /* height: auto; */
+}
+
+.product-colors {
+    display: flex;
+    justify-content: space-around;
+    /* margin-bottom: 15px; */
+}
+
+.product-colors {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #333;
+}
+.color-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #333;
+}
+.product-title {
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.product-pricing {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.reverse-pricing {
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.discount-price {
+    display: flex;
+    gap: 5px;
+    color: #e53935;
+    font-weight: bold;
+}
+
+.final-price {
+    color: #333;
+    font-weight: bold;
+}
 
 /* three box */
 .box-section {
+    max-width: 1224px;
     display: flex;
     justify-content: space-between;
-    /* width: 1600px; */
-    margin: 20px auto;
+    gap: 24px;
+    /* margin: 20px auto; */
 }
 
-.box {
+
+.box-se {
     width: 32%; /* هر باکس یک سوم عرض کل باشد */
     /* background-color: #f8f9fa; */
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 20px;
+    /* border: 1px solid #ddd; */
+   
+    /* padding: 24px; */
     text-align: center;
     /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
 }
 
-.box img {
-    width: 100%;
-    height: 200px;
+.box-se img {
+    border-radius: 8px;
+    width: 392px;
+    /* height: 218px; */
     object-fit: cover;
-    border-radius: 8px 8px 0 0;
 }
 
-.box h3 {
+.box-se h3 {
     margin: 15px 0;
     font-size: 20px;
     color: #333;
+    text-align: right;
 }
 
-.box p {
-    font-size: 16px;
+.box-se p {
+    font-size: 14px;
     color: #666;
     margin-bottom: 20px;
+    margin: 14px 16px 16px 16px;
+    text-align: right;
 }
 
 .read-more-btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #007bff;
+    /* background-color: #007bff; */
     color: white;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
+    font-size: 16px;
+    font-weight: medium;
+}
+a.read-more-btn {
+    background-color: transparent;
+    color: #000;
 }
 
-.read-more-btn:hover {
-    background-color: #0056b3;
+a.read-more-btn:hover {
+    background-color: transparent;
 }
+
 
 /* نوبت دهی انلاین */
 
 .two-column-section {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    /* width: 1600px; */
     width: 1224px;
+    height: 333px;
     margin: 20px auto;
     padding: 20px;
     background-color: #f8f9fa;
@@ -511,10 +637,13 @@ span.discount-percentage {
 }
 
 .left-column img {
-    width: 100%;
-    height: auto;
+    /* width: 100%;
+    height: auto; */
     border-radius: 8px;
     object-fit: cover;
+    height: 293px !important;
+    width: 525px !important;
+
 }
 
 .right-column {
@@ -525,28 +654,30 @@ span.discount-percentage {
 
 .right-column h2 {
     font-size: 24px;
-    margin-bottom: 15px;
+    font-weight: bold;
     color: #333;
+    text-align: right;
 }
 
 .right-column p {
     font-size: 16px;
+    font-weight: regular;
     margin-bottom: 20px;
     color: #666;
+    text-align: right;
 }
 
 .view-more-btn {
+    font-size: 16px;
+    font-weight: medium;
     display: inline-block;
     padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
+    background-color: transparent;
+    border: 1px solid #000;
+    color: #000;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 8px;
     transition: background-color 0.3s ease;
-}
-
-.view-more-btn:hover {
-    background-color: #0056b3;
 }
 
 /* سوالات متداول*/
@@ -555,7 +686,8 @@ span.discount-percentage {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    /* width: 1600px; */
+    max-width: 1224px;
+    height: 556px;
     margin: 20px auto;
     padding: 20px;
     background-color: #f8f9fa;
@@ -563,24 +695,27 @@ span.discount-percentage {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.left-column {
+.faq-section .left-column {
     flex: 1;
     padding-right: 20px;
+    width: 389px !important;
 }
 
-.left-column img {
-    width: 100%;
-    height: auto;
+.faq-section .left-column img {
+    width: 389px !important;
+    height: 486px !important;
+    /* height: auto; */
     border-radius: 8px;
     object-fit: cover;
 }
 
-.right-column {
+.faq-section.right-column {
     flex: 1;
     padding-left: 20px;
     text-align: left;
     height: 476px; /* ارتفاع آکاردئون */
     overflow-y: auto; /* در صورت نیاز برای اسکرول */
+    width: 808px !important;
 }
 
 .accordion {
@@ -588,22 +723,26 @@ span.discount-percentage {
     border: 1px solid #ddd;
     border-radius: 8px;
     overflow: hidden; /* برای پنهان کردن قسمت‌های غیر فعال */
+    width: 790px;
 }
 
 .accordion-item {
     border-bottom: 1px solid #ddd;
+    background-color: transparent;
 }
 
 .accordion-header {
     padding: 15px;
     cursor: pointer;
-    background-color: #f1f1f1;
+    background-color: transparent;
     font-weight: bold;
+    text-align: right;
 }
 
 .accordion-body {
     padding: 15px;
     display: none; /* مخفی کردن متن جواب به طور پیش‌فرض */
+    text-align: right;
 }
 
 .accordion-item.active .accordion-body {
@@ -611,9 +750,9 @@ span.discount-percentage {
 }
 
 /* نظرات مشتریان */
-.carousel-section {
+ /* .carousel-section {
     position: relative;
-    /* width: 1600px; */
+   
     margin: 20px auto;
     text-align: center;
     background-color: #f8f9fa;
@@ -624,16 +763,16 @@ span.discount-percentage {
 
 .carousel {
     overflow: hidden;
-    max-height: 150px; /* ارتفاع کاروسل */
+    max-height: 150px; 
 }
 
 .carousel-item {
-    display: none; /* پنهان کردن همه نظرات */
+    display: none; 
     padding: 20px;
 }
 
 .carousel-item.active {
-    display: block; /* نمایش نظر فعال */
+    display: block; 
 }
 
 button {
@@ -658,14 +797,72 @@ button {
 
 button:hover {
     background-color: rgba(0, 123, 255, 1);
+} */
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 1224px;
+
 }
+
+.box {
+    width: 288px;
+    height: 166px;
+    /* background-color: #fff; */
+    /* border: 1px solid #ddd; */
+    /* border-radius: 8px; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.box-section {
+    padding: 20px;
+}
+
+.review {
+    /* background-color: #f0f0f0; */
+    /* border-bottom: 1px solid #ddd; */
+    font-weight: bold;
+}
+
+.other {
+    /* background-color: #fafafa; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.customer-name {
+    font-weight: bold;
+    color: #333;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+}
+
+.star-icon {
+    color: #ffc107;
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+.rating-value {
+    font-weight: bold;
+    color: #333;
+}
+
 
 /* چرا حکیم نور */
 
 .icon-section {
     text-align: center;
     /* padding: 40px 20px; */
-    background-color: #f8f9fa;
+    /* background-color: #f8f9fa; */
 }
 
 .icon-container {
@@ -679,15 +876,15 @@ button:hover {
     height: 186px;
     margin: 10px; /* فاصله بین باکس‌ها */
     padding: 20px;
-    border: 1px solid #ddd;
+    /* border: 1px solid #ddd; */
     border-radius: 8px;
     background-color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s; /* افکت حرکت */
+    /* transition: transform 0.3s; */
 }
 
 .icon-box:hover {
-    transform: translateY(-5px); /* افکت شناوری */
+    /* transform: translateY(-5px);  */
 }
 
 .icon {
@@ -741,9 +938,9 @@ button:hover {
 }
 
 .article-box {
-    background-color: #f4f4f4;
-    width: 23%; /* هر باکس 23% عرض دارد تا 4 باکس کنار هم جا بگیرد */
-    padding: 20px;
+    /* background-color: #f4f4f4; */
+    width: 288px; /* هر باکس 23% عرض دارد تا 4 باکس کنار هم جا بگیرد */
+    /* padding: 20px; */
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
@@ -752,24 +949,30 @@ button:hover {
 
 .article-box img {
     width: 100%;
-    height: 200px; /* تنظیم ارتفاع برای تصاویر */
-    object-fit: cover;
+    height: 192px; /* تنظیم ارتفاع برای تصاویر */
+    /* object-fit: cover; */
     border-radius: 8px;
     margin-bottom: 15px;
 }
 
 .article-box h3 {
-    font-size: 18px;
+    font-size: 16px;
+    font-weight: bold;
     margin-bottom: 10px;
 }
 
 .article-box p {
     font-size: 14px;
+    font-weight: regular;
     color: #666;
     margin-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .read-more-btn {
+    font-size: 16px;
+    font-size: medium;
     display: inline-block;
     padding: 10px 20px;
     background-color: #007bff;
@@ -788,7 +991,7 @@ button:hover {
 .hakim-noor-section {
     text-align: center;
     padding: 20px;
-    background-color: #f9f9f9;
+    /* background-color: #f9f9f9; */
     margin: 40px 0;
     border-radius: 8px;
 }
@@ -826,30 +1029,30 @@ button:hover {
 .read-more .btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
+    /* background-color: #007bff; */
+    color: #000;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s;
 }
 
-.read-more .btn:hover {
-    background-color: #0056b3;
-}
+
 
 /* فوتر */
 
 .footer-section {
-    background-color: #333;
-    color: white;
+    /* background-color: #333; */
+    color: #000;
     padding: 20px;
-    font-family: Arial, sans-serif;
+    direction: rtl;
+  
 }
 
 .footer-top {
     display: flex;
+    width: 1224px;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
     border-bottom: 1px solid #444;
     padding-bottom: 20px;
     margin-bottom: 20px;
@@ -869,15 +1072,13 @@ button:hover {
 }
 
 .social-icons a {
-    color: white;
+    color: #000;
     font-size: 24px;
     margin-right: 15px;
     transition: color 0.3s;
 }
 
-.social-icons a:hover {
-    color: #ffcc00;
-}
+
 
 .footer-contact {
     display: flex;
@@ -925,7 +1126,7 @@ button:hover {
 }
 
 .footer-column ul li a {
-    color: white;
+    color: #000;
     text-decoration: none;
     transition: color 0.3s;
 }
@@ -1077,3 +1278,6 @@ button:hover {
         text-align: center;
     }
 }
+
+
+
