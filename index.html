@@ -1,41 +1,46 @@
 <!DOCTYPE html>
-<html lang="fa">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>hakimnoor</title>
+    <title>hakim noor</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header>
- <div class="menuOne">
-            <div class="actions">
-                <a href="#" class="login-btn">ورود / ثبت‌نام</a>
-             
-                <i class="fas fa-shopping-cart"></i></a> <!-- آیکن سبد خرید -->
-                <a href="#" class="icon"><i class="fas fa-search"></i></a> <!-- آیکن جستجو -->
-              
+    <!-- هدر سایت -->
+
+    <header class="header">
+        <div class="container">
+            <!-- منو بالایی -->
+
+            <div class="menuOne">
+                <div class="logo">
+                <img src="8.png" alt="لوگو" />
             </div>
             <nav class="menu">
                 <ul>
-                    <li><a href="#">وبلاگ</a></li>
-                    <li><a href="#">تماس با ما</a></li>
-                    <li><a href="#"> تعیین نوبت آنلاین</a></li>
                     <li><a href="#">دسته بندی محصولات </a></li>
-           
+                    <li><a href="#"> تعیین نوبت آنلاین</a></li>
+                    <li><a href="#">تماس با ما</a></li>
+                    <li><a href="#">وبلاگ</a></li>
+                    
+                   
+                 
                 </ul>
             </nav>
-          
-            <div class="logo"></div>
-                <img src="8.png" alt="لوگو" />
+            <div class="actions">
+                
+             
+                <i class="fas fa-shopping-cart"></i></a> <!-- آیکن سبد خرید -->
+                <a href="#" class="icon"><i class="fas fa-search"></i></a> <!-- آیکن جستجو -->
+                <a href="#" class="login-btn">ورود / ثبت‌نام</a>
+              
             </div>
-    
-   
-        </div>
+            </div>
 
-        
-        
+            <!-- منو پایینی -->
+    
         <div class="menuTwo">
             <nav class="submenu">
                 <ul>
@@ -48,21 +53,35 @@
                 </ul>
             </nav>
         </div>
-        
-    </header>
-    <main>
-        <div class="slider">
-            <div class="slide active">
-                <img src="1.png" alt="اسلاید 1">
-            </div>
-            <div class="slide">
-                <img src="1.png" alt="اسلاید 2">
-            </div>
-            <!-- <div class="slide">
-                <img src="slide3.jpg" alt="اسلاید 3">
-            </div> -->
+
         </div>
-        
+    </header>
+
+
+<!-- هدر سایت -->
+    <main>
+            <!-- اسلایدر -->
+        <div class="container">
+            <section class="section">
+                <div class="slider">
+                    <div class="slide active">
+                        <img src="1.png" alt="اسلاید 1">
+                    </div>
+                    <div class="slide">
+                        <img src="1.png" alt="اسلاید 2">
+                    </div>
+                    <!-- <div class="slide">
+                        <img src="slide3.jpg" alt="اسلاید 3">
+                    </div> -->
+                </div>
+            </section>
+            </div>
+
+            <!-- اسلایدر -->
+
+            <!-- بنرها -->
+<div class="container">
+    <div class="section">
         <div class="banner-section">
             <div class="banner1">
                 <img src="5.png" alt="بنر 1">
@@ -71,214 +90,113 @@
                 <img src="6.png" alt="بنر 2">
             </div>
         </div>
-        <!-- محصولات -->
+    </div>
+</div>
 
-       <!-- <section class="products-section"> -->
-            <!-- بخش بالایی: عنوان و کنترل‌های کاروسل -->
-            <!-- <div class="products-header">
-                <div class="carousel-controls">
-                    <span class="arrow left"><i class="fas fa-chevron-left"></i></span>
-                    <span class="arrow right"><i class="fas fa-chevron-right"></i></span>
-                </div>
-                <h2 class="products-title">محصولات</h2>
-            </div> -->
-        
-<!--             
-            <div class="products-carousel">
+<!-- بنرها -->
+
+<!-- کارت محصول -->
+<div class="container">
+    <div class="section">
+        <section class="products-section">
+            <div class="section-header">
+                <h2>محصولات</h2>
+                <a href="#" class="view-all">
+                    مشاهده همه محصولات
+                    <span class="arrow">→</span>
+                </a>
+            </div>
+    
+            <div class="products-grid">
+                <!-- محصول 1 -->
                 <div class="product-box">
-                    <div class="top-row">
-                        <div class="installment">خرید اقساطی</div>
-                        <div class="discount-timer">00:10:20</div>
+                    <div class="product-top">
+                        <span class="installment">خرید اقساطی</span>
+                        <span class="discount-counter">33:33:33</span>
                     </div>
-                    <div class="product-image">
-                        <img src="product1.jpg" alt="محصول 1">
-                    </div>
+                    <img src="Rectangle 5910.png" alt="محصول 1" class="product-image">
                     <div class="color-options">
-                        <span class="color-circle" style="background-color: red;"></span>
-                        <span class="color-circle" style="background-color: blue;"></span>
-                        <span class="color-circle" style="background-color: green;"></span>
+                        <div class="color-circle red"></div>
+                        <div class="color-circle green"></div>
+                        <div class="color-circle blue"></div>
+                        <div class="color-circle black"></div>
                     </div>
-                    <h3 class="product-title">عنوان محصول 1</h3>
-                    <div class="price-row">
-                        <span class="price-discounted">250,000 تومان</span>
-                        
-                        <span class="price-original">300,000 تومان</span>
-                        <span class="discount-percentage">40%</span> 
+                    <h3 class="product-title">مستطیلی، فلزی، اسپرت</h3>
+                    <div class="price-info">
+                        <span class="discount-percentage">40%</span>
+                        <span class="original-price">200,000 تومان</span>
+                        <span class="discounted-price">120,000 تومان</span>
                     </div>
-                </div> -->
-               
-            <!-- </div>
-        </section> -->
-        
-
-        <!-- محصولات اصلی -->
-        
-        <div class="mahsoulat">
-            <h2>جدیدترین فریم های حکیم نور</h2>
-        </div>
-
-        <section class="product-container">
-            <div class="product-box">
-                <!-- قسمت اول: خرید اقساطی و تایمر -->
-                <div class="box-section installment-timer">
-                    <span class="installment">خرید اقساطی</span>
-                    <span class="timer">00:12:45</span>
-                    
-                   
                 </div>
-                <!-- قسمت دوم: تصویر محصول -->
-                <div class="box-section product-image">
-                    <img src="Rectangle 5910.png" alt="محصول ۱">
-                </div>
-                <!-- قسمت سوم: رنگ‌بندی محصول -->
-                <div class="box-section product-colors">
-                    <span class="color-circle" style="background-color: blue;"></span>
-                    <span class="color-circle" style="background-color: red;"></span>
-                    <span class="color-circle" style="background-color: green;"></span>
-                </div>
-                <!-- قسمت چهارم: عنوان محصول -->
-                <div class="box-section product-title">
-                    <h3>محصول شماره ۱</h3>
-                </div>
-                <!-- قسمت پنجم: قیمت -->
-                <div class="box-section product-pricing">
-                   
-                    
-                    <div class="discount-price">
-                        <span>40%</span>
-                        <span>140,000 تومان</span>
-                        
+                <!-- محصول 2 -->
+                <div class="product-box">
+                    <div class="product-top">
+                        <span class="installment">خرید اقساطی</span>
+                        <span class="discount-counter">33:33:33</span>
                     </div>
-                    <div class="final-price"></div>
-                        <span>120,000 تومان</span>
+                    <img src="Rectangle 5910.png" alt="محصول 1" class="product-image">
+                    <div class="color-options">
+                        <div class="color-circle red"></div>
+                        <div class="color-circle green"></div>
+                        <div class="color-circle blue"></div>
+                        <div class="color-circle black"></div>
+                    </div>
+                    <h3 class="product-title">مستطیلی، فلزی، اسپرت</h3>
+                    <div class="price-info">
+                        <span class="discount-percentage">40%</span>
+                        <span class="original-price">200,000 تومان</span>
+                        <span class="discounted-price">120,000 تومان</span>
+                    </div>
+                </div>
+                <!-- محصول 3 -->
+                <div class="product-box">
+                    <div class="product-top">
+                        <span class="installment">خرید اقساطی</span>
+                        <span class="discount-counter">33:33:33</span>
+                    </div>
+                    <img src="Rectangle 5910.png" alt="محصول 1" class="product-image">
+                    <div class="color-options">
+                        <div class="color-circle red"></div>
+                        <div class="color-circle green"></div>
+                        <div class="color-circle blue"></div>
+                        <div class="color-circle black"></div>
+                    </div>
+                    <h3 class="product-title">مستطیلی، فلزی، اسپرت</h3>
+                    <div class="price-info">
+                        <span class="discount-percentage">40%</span>
+                        <span class="original-price">200,000 تومان</span>
+                        <span class="discounted-price">120,000 تومان</span>
+                    </div>
+                </div>
+                 <!-- محصول 4 -->
+                 <div class="product-box">
+                    <div class="product-top">
+                        <span class="installment">خرید اقساطی</span>
+                        <span class="discount-counter">33:33:33</span>
+                    </div>
+                    <img src="Rectangle 5910.png" alt="محصول 1" class="product-image">
+                    <div class="color-options">
+                        <div class="color-circle red"></div>
+                        <div class="color-circle green"></div>
+                        <div class="color-circle blue"></div>
+                        <div class="color-circle black"></div>
+                    </div>
+                    <h3 class="product-title">مستطیلی، فلزی، اسپرت</h3>
+                    <div class="price-info">
+                        <span class="discount-percentage">40%</span>
+                        <span class="original-price">200,000 تومان</span>
+                        <span class="discounted-price">120,000 تومان</span>
                     </div>
                 </div>
             </div>
-            <div class="product-box">
-                <!-- قسمت اول: خرید اقساطی و تایمر -->
-                <div class="box-section installment-timer">
-                    <span class="installment">خرید اقساطی</span>
-                    <span class="timer">00:12:45</span>
-                    
-                   
-                </div>
-                <!-- قسمت دوم: تصویر محصول -->
-                <div class="box-section product-image">
-                    <img src="Rectangle 5910.png" alt="محصول ۱">
-                </div>
-                <!-- قسمت سوم: رنگ‌بندی محصول -->
-                <div class="box-section product-colors">
-                    <span class="color-circle" style="background-color: blue;"></span>
-                    <span class="color-circle" style="background-color: red;"></span>
-                    <span class="color-circle" style="background-color: green;"></span>
-                </div>
-                <!-- قسمت چهارم: عنوان محصول -->
-                <div class="box-section product-title">
-                    <h3>محصول شماره ۱</h3>
-                </div>
-                <!-- قسمت پنجم: قیمت -->
-                <div class="box-section product-pricing">
-                   
-                    
-                    <div class="discount-price">
-                        <span>40%</span>
-                        <span>140,000 تومان</span>
-                        
-                    </div>
-                    <div class="final-price"></div>
-                        <span>120,000 تومان</span>
-                    </div>
-                </div>
-                <div class="product-box">
-                    <!-- قسمت اول: خرید اقساطی و تایمر -->
-                    <div class="box-section installment-timer">
-                        <span class="installment">خرید اقساطی</span>
-                        <span class="timer">00:12:45</span>
-                        
-                       
-                    </div>
-                    <!-- قسمت دوم: تصویر محصول -->
-                    <div class="box-section product-image">
-                        <img src="Rectangle 5910.png" alt="محصول ۱">
-                    </div>
-                    <!-- قسمت سوم: رنگ‌بندی محصول -->
-                    <div class="box-section product-colors">
-                        <span class="color-circle" style="background-color: blue;"></span>
-                        <span class="color-circle" style="background-color: red;"></span>
-                        <span class="color-circle" style="background-color: green;"></span>
-                    </div>
-                    <!-- قسمت چهارم: عنوان محصول -->
-                    <div class="box-section product-title">
-                        <h3>محصول شماره ۱</h3>
-                    </div>
-                    <!-- قسمت پنجم: قیمت -->
-                    <div class="box-section product-pricing">
-                       
-                        
-                        <div class="discount-price">
-                            <span>40%</span>
-                            <span>140,000 تومان</span>
-                            
-                        </div>
-                        <div class="final-price"></div>
-                            <span>120,000 تومان</span>
-                        </div>
-                    </div>
-                    <div class="product-box">
-                        <!-- قسمت اول: خرید اقساطی و تایمر -->
-                        <div class="box-section installment-timer">
-                            <span class="installment">خرید اقساطی</span>
-                            <span class="timer">00:12:45</span>
-                            
-                           
-                        </div>
-                        <!-- قسمت دوم: تصویر محصول -->
-                        <div class="box-section product-image">
-                            <img src="Rectangle 5910.png" alt="محصول ۱">
-                        </div>
-                        <!-- قسمت سوم: رنگ‌بندی محصول -->
-                        <div class="box-section product-colors">
-                            <span class="color-circle" style="background-color: blue;"></span>
-                            <span class="color-circle" style="background-color: red;"></span>
-                            <span class="color-circle" style="background-color: green;"></span>
-                        </div>
-                        <!-- قسمت چهارم: عنوان محصول -->
-                        <div class="box-section product-title">
-                            <h3>محصول شماره ۱</h3>
-                        </div>
-                        <!-- قسمت پنجم: قیمت -->
-                        <div class="box-section product-pricing">
-                           
-                            
-                            <div class="discount-price">
-                                <span>40%</span>
-                                <span>140,000 تومان</span>
-                                
-                            </div>
-                            <div class="final-price"></div>
-                                <span>120,000 تومان</span>
-                            </div>
-                        </div>
-        </section>
-        
+    </div>
+</div>
+<!-- کارت محصول -->
 
+        <!-- سه تا باکس -->
+<div class="container">
+    <div class="section">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- سه تا باکس -->
         <div class="box-section">
             <div class="box-se">
                 <img src="3.png" alt="باکس 1">
@@ -299,327 +217,356 @@
                 <a href="#" class="read-more-btn">مشاهده بیشتر</a>
             </div>
         </div>
-        
-       
-        <div class="mahsoulat">
-            <h2>جدیدترین فریم های حکیم نور</h2>
-        </div>
-
-        <section class="product-container">
-            <div class="product-box">
-                <!-- قسمت اول: خرید اقساطی و تایمر -->
-                <div class="box-section installment-timer">
-                    <span class="installment">خرید اقساطی</span>
-                    <span class="timer">00:12:45</span>
-                   
-                   
-                </div>
-                <!-- قسمت دوم: تصویر محصول -->
-                <div class="box-section product-image">
-                    <img src="Rectangle 5910.png" alt="محصول ۱">
-                </div>
-                <!-- قسمت سوم: رنگ‌بندی محصول -->
-                <div class="box-section product-colors">
-                    <span class="color-circle" style="background-color: blue;"></span>
-                    <span class="color-circle" style="background-color: red;"></span>
-                    <span class="color-circle" style="background-color: green;"></span>
-                </div>
-                <!-- قسمت چهارم: عنوان محصول -->
-                <div class="box-section product-title">
-                    <h3>محصول شماره ۱</h3>
-                </div>
-                <!-- قسمت پنجم: قیمت -->
-                <div class="box-section product-pricing">
-                   
-                    <div class="discount-price">
-                        <span>140,000 تومان</span>
-                        <span>40%</span>
-                    </div>
-                   
-                    <div class="final-price">
-                        <span>120,000 تومان</span>
-                    </div>
-                  
-                </div>
+    </div>
+</div>
+        <!-- سه تا باکس -->
+         <!-- کارت محصول -->
+<div class="container">
+    <div class="section">
+        <section class="products-section">
+            <div class="section-header">
+                <h2>محصولات</h2>
+                <a href="#" class="view-all">
+                    مشاهده همه محصولات
+                    <span class="arrow">→</span>
+                </a>
             </div>
-            <div class="product-box">
-                <!-- قسمت اول: خرید اقساطی و تایمر -->
-                <div class="box-section installment-timer">
-                    <span class="installment">خرید اقساطی</span>
-                    <span class="timer">00:12:45</span>
-              
-                   
-                </div>
-                <!-- قسمت دوم: تصویر محصول -->
-                <div class="box-section product-image">
-                    <img src="Rectangle 5910.png" alt="محصول ۱">
-                </div>
-                <!-- قسمت سوم: رنگ‌بندی محصول -->
-                <div class="box-section product-colors">
-                    <span class="color-circle" style="background-color: blue;"></span>
-                    <span class="color-circle" style="background-color: red;"></span>
-                    <span class="color-circle" style="background-color: green;"></span>
-                </div>
-                <!-- قسمت چهارم: عنوان محصول -->
-                <div class="box-section product-title">
-                    <h3>محصول شماره ۱</h3>
-                </div>
-                <!-- قسمت پنجم: قیمت -->
-                <div class="box-section product-pricing">
-                   
-                    <div class="final-price">
-                        <span>120,000 تومان</span>
+    
+            <div class="products-grid">
+                <!-- محصول 1 -->
+                <div class="product-box">
+                    <div class="product-top">
+                        <span class="installment">خرید اقساطی</span>
+                        <span class="discount-counter">33:33:33</span>
                     </div>
-                    <div class="discount-price">
-                       
-                        <span>140,000 تومان</span>
-                        <span>40%</span>
+                    <img src="Rectangle 5910.png" alt="محصول 1" class="product-image">
+                    <div class="color-options">
+                        <div class="color-circle red"></div>
+                        <div class="color-circle green"></div>
+                        <div class="color-circle blue"></div>
+                        <div class="color-circle black"></div>
+                    </div>
+                    <h3 class="product-title">مستطیلی، فلزی، اسپرت</h3>
+                    <div class="price-info">
+                        <span class="discount-percentage">40%</span>
+                        <span class="original-price">200,000 تومان</span>
+                        <span class="discounted-price">120,000 تومان</span>
                     </div>
                 </div>
-            </div>
-            <div class="product-box">
-                <!-- قسمت اول: خرید اقساطی و تایمر -->
-                <div class="box-section installment-timer">
-                    <span class="timer">00:12:45</span>
-                    <span class="installment">خرید اقساطی</span>
-                   
-                </div>
-                <!-- قسمت دوم: تصویر محصول -->
-                <div class="box-section product-image">
-                    <img src="Rectangle 5910.png" alt="محصول ۱">
-                </div>
-                <!-- قسمت سوم: رنگ‌بندی محصول -->
-                <div class="box-section product-colors">
-                    <span class="color-circle" style="background-color: blue;"></span>
-                    <span class="color-circle" style="background-color: red;"></span>
-                    <span class="color-circle" style="background-color: green;"></span>
-                </div>
-                <!-- قسمت چهارم: عنوان محصول -->
-                <div class="box-section product-title">
-                    <h3>محصول شماره ۱</h3>
-                </div>
-                <!-- قسمت پنجم: قیمت -->
-                <div class="box-section product-pricing">
-                   
-                    <div class="final-price">
-                        <span>120,000 تومان</span>
+                <!-- محصول 2 -->
+                <div class="product-box">
+                    <div class="product-top">
+                        <span class="installment">خرید اقساطی</span>
+                        <span class="discount-counter">33:33:33</span>
                     </div>
-                    <div class="discount-price">
-                       
-                        <span>140,000 تومان</span>
-                        <span>40%</span>
+                    <img src="Rectangle 5910.png" alt="محصول 1" class="product-image">
+                    <div class="color-options">
+                        <div class="color-circle red"></div>
+                        <div class="color-circle green"></div>
+                        <div class="color-circle blue"></div>
+                        <div class="color-circle black"></div>
+                    </div>
+                    <h3 class="product-title">مستطیلی، فلزی، اسپرت</h3>
+                    <div class="price-info">
+                        <span class="discount-percentage">40%</span>
+                        <span class="original-price">200,000 تومان</span>
+                        <span class="discounted-price">120,000 تومان</span>
+                    </div>
+                </div>
+                <!-- محصول 3 -->
+                <div class="product-box">
+                    <div class="product-top">
+                        <span class="installment">خرید اقساطی</span>
+                        <span class="discount-counter">33:33:33</span>
+                    </div>
+                    <img src="Rectangle 5910.png" alt="محصول 1" class="product-image">
+                    <div class="color-options">
+                        <div class="color-circle red"></div>
+                        <div class="color-circle green"></div>
+                        <div class="color-circle blue"></div>
+                        <div class="color-circle black"></div>
+                    </div>
+                    <h3 class="product-title">مستطیلی، فلزی، اسپرت</h3>
+                    <div class="price-info">
+                        <span class="discount-percentage">40%</span>
+                        <span class="original-price">200,000 تومان</span>
+                        <span class="discounted-price">120,000 تومان</span>
+                    </div>
+                </div>
+                 <!-- محصول 4 -->
+                 <div class="product-box">
+                    <div class="product-top">
+                        <span class="installment">خرید اقساطی</span>
+                        <span class="discount-counter">33:33:33</span>
+                    </div>
+                    <img src="Rectangle 5910.png" alt="محصول 1" class="product-image">
+                    <div class="color-options">
+                        <div class="color-circle red"></div>
+                        <div class="color-circle green"></div>
+                        <div class="color-circle blue"></div>
+                        <div class="color-circle black"></div>
+                    </div>
+                    <h3 class="product-title">مستطیلی، فلزی، اسپرت</h3>
+                    <div class="price-info">
+                        <span class="discount-percentage">40%</span>
+                        <span class="original-price">200,000 تومان</span>
+                        <span class="discounted-price">120,000 تومان</span>
                     </div>
                 </div>
             </div>
-            <div class="product-box">
-                <!-- قسمت اول: خرید اقساطی و تایمر -->
-                <div class="box-section installment-timer">
-                    <span class="timer">00:12:45</span>
-                    <span class="installment">خرید اقساطی</span>
-                   
-                </div>
-                <!-- قسمت دوم: تصویر محصول -->
-                <div class="box-section product-image">
-                    <img src="Rectangle 5910.png" alt="محصول ۱">
-                </div>
-                <!-- قسمت سوم: رنگ‌بندی محصول -->
-                <div class="box-section product-colors">
-                    <span class="color-circle" style="background-color: blue;"></span>
-                    <span class="color-circle" style="background-color: red;"></span>
-                    <span class="color-circle" style="background-color: green;"></span>
-                </div>
-                <!-- قسمت چهارم: عنوان محصول -->
-                <div class="box-section product-title">
-                    <h3>محصول شماره ۱</h3>
-                </div>
-                <!-- قسمت پنجم: قیمت -->
-                <div class="box-section product-pricing">
-                   
-                    <div class="final-price">
-                        <span>120,000 تومان</span>
-                    </div>
-                    <div class="discount-price">
-                       
-                        <span>140,000 تومان</span>
-                        <span>40%</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
+    </div>
+</div>
+<!-- کارت محصول -->
+<!-- نوبت دهی آنلاین -->
+<div class="container">
+    <div class="section">
         <div class="two-column-section">
         
             <div class="right-column">
-                <h2>عنوان بخش</h2>
-                <p>این یک توضیح کوتاه درباره این بخش است. شما می‌توانید اطلاعات بیشتری را اینجا قرار دهید.</p>
-                <a href="#" class="view-more-btn">مشاهده بیشتر</a>
+                <h2> نوبت دهی آنلاین</h2>
+                <p>این یک توضیح کوتاه درباره این بخش است. شما می‌توانید اطلاعات بیشتری را اینجا قرار دهید.درباره این بخش است. شما می‌توانید اطلاعات بیشتری را اینجا قراردرباره این بخش است. شما می‌توانید اطلاعات بیشتری را اینجا قراردرباره این بخش است. شما می‌توانید اطلاعات بیشتری را اینجا قراردرباره این بخش است. شما می‌توانید اطلاعات بیشتری را اینجا قرار</p>
+                
+                <button class="view-more-btn"><a href="#">مشاهده بیشتر</a></button>
             </div>
             <div class="left-column">
                 <img src="4.png" alt="تصویر">
             </div>
         </div>
-        
-        <div class="faq-section">
-        
-            <div class="right-column">
-                <h2>سوالات متداول</h2>
-                <div class="accordion">
-                    <div class="accordion-item">
-                        <h3 class="accordion-header">سوال 1</h3>
-                        <div class="accordion-body">
-                            <p>پاسخ به سوال 1.</p>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h3 class="accordion-header">سوال 2</h3>
-                        <div class="accordion-body">
-                            <p>پاسخ به سوال 2.</p>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h3 class="accordion-header">سوال 3</h3>
-                        <div class="accordion-body">
-                            <p>پاسخ به سوال 3.</p>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h3 class="accordion-header">سوال 4</h3>
-                        <div class="accordion-body">
-                            <p>پاسخ به سوال 4.</p>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h3 class="accordion-header">سوال 5</h3>
-                        <div class="accordion-body">
-                            <p>پاسخ به سوال 5.</p>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h3 class="accordion-header">سوال 6</h3>
-                        <div class="accordion-body">
-                            <p>پاسخ به سوال 6.</p>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h3 class="accordion-header">سوال 7</h3>
-                        <div class="accordion-body">
-                            <p>پاسخ به سوال 7.</p>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h3 class="accordion-header">سوال 8</h3>
-                        <div class="accordion-body">
-                            <p>پاسخ به سوال 8.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="left-column">
-                <img src="7.png" alt="تصویر سوالات متداول">
-            </div>
-        </div>
-        <!-- <div class="carousel-section">
-            <h2>نظرات مشتریان</h2>
-            <div class="carousel">
-                <div class="carousel-item active">
-                    <p>"این محصول فوق‌العاده است! من بسیار راضی هستم."</p>
-                    <h4>- مشتری 1</h4>
-                </div>
-                <div class="carousel-item">
-                    <p>"خدمات مشتریان عالی! تجربه خرید بی‌نظیری داشتم."</p>
-                    <h4>- مشتری 2</h4>
-                </div>
-                <div class="carousel-item">
-                    <p>"کیفیت محصول بسیار بالا بود و من دوباره خرید می‌کنم."</p>
-                    <h4>- مشتری 3</h4>
-                </div>
-                <div class="carousel-item">
-                    <p>"بسیار خوشحالم که اینجا را پیدا کردم. به همه توصیه می‌کنم."</p>
-                    <h4>- مشتری 4</h4>
-                </div>
-                <div class="carousel-item">
-                    <p>"محصولات بسیار باکیفیت و قیمت‌های مناسب. عالی!"</p>
-                    <h4>- مشتری 5</h4>
-                </div>
-            </div>
-            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
-            <button class="next" onclick="changeSlide(1)">&#10095;</button>
-        </div> -->
-        
-<!-- باکس نظرات -->
-<div class="nazar">
-    <h2>نظرات مشتریان </h2>
+    </div>
 </div>
-<section class="container">
-
-    <div class="box">
-
-        <div class="box-section review">
-            <p>نظر کاربر اول: این محصول عالی بود!</p>
-        </div>
-        <div class="box-section other">
-            <span class="rating"></span>
-                <i class="star-icon">⭐</i>
-                <span class="rating-value">4.5</span>
-            </span>
-            <span class="customer-name">علی رضایی</span>
-            
-        </div>
+<!-- نوبت دهی آنلاین -->
+          <!-- کارت محصول -->
+<div class="container">
+    <div class="section">
+        <section class="products-section">
+            <div class="section-header">
+                <h2>محصولات</h2>
+                <a href="#" class="view-all">
+                    مشاهده همه محصولات
+                    <span class="arrow">→</span>
+                </a>
+            </div>
+    
+            <div class="products-grid">
+                <!-- محصول 1 -->
+                <div class="product-box">
+                    <div class="product-top">
+                        <span class="installment">خرید اقساطی</span>
+                        <span class="discount-counter">33:33:33</span>
+                    </div>
+                    <img src="Rectangle 5910.png" alt="محصول 1" class="product-image">
+                    <div class="color-options">
+                        <div class="color-circle red"></div>
+                        <div class="color-circle green"></div>
+                        <div class="color-circle blue"></div>
+                        <div class="color-circle black"></div>
+                    </div>
+                    <h3 class="product-title">مستطیلی، فلزی، اسپرت</h3>
+                    <div class="price-info">
+                        <span class="discount-percentage">40%</span>
+                        <span class="original-price">200,000 تومان</span>
+                        <span class="discounted-price">120,000 تومان</span>
+                    </div>
+                </div>
+                <!-- محصول 2 -->
+                <div class="product-box">
+                    <div class="product-top">
+                        <span class="installment">خرید اقساطی</span>
+                        <span class="discount-counter">33:33:33</span>
+                    </div>
+                    <img src="Rectangle 5910.png" alt="محصول 1" class="product-image">
+                    <div class="color-options">
+                        <div class="color-circle red"></div>
+                        <div class="color-circle green"></div>
+                        <div class="color-circle blue"></div>
+                        <div class="color-circle black"></div>
+                    </div>
+                    <h3 class="product-title">مستطیلی، فلزی، اسپرت</h3>
+                    <div class="price-info">
+                        <span class="discount-percentage">40%</span>
+                        <span class="original-price">200,000 تومان</span>
+                        <span class="discounted-price">120,000 تومان</span>
+                    </div>
+                </div>
+                <!-- محصول 3 -->
+                <div class="product-box">
+                    <div class="product-top">
+                        <span class="installment">خرید اقساطی</span>
+                        <span class="discount-counter">33:33:33</span>
+                    </div>
+                    <img src="Rectangle 5910.png" alt="محصول 1" class="product-image">
+                    <div class="color-options">
+                        <div class="color-circle red"></div>
+                        <div class="color-circle green"></div>
+                        <div class="color-circle blue"></div>
+                        <div class="color-circle black"></div>
+                    </div>
+                    <h3 class="product-title">مستطیلی، فلزی، اسپرت</h3>
+                    <div class="price-info">
+                        <span class="discount-percentage">40%</span>
+                        <span class="original-price">200,000 تومان</span>
+                        <span class="discounted-price">120,000 تومان</span>
+                    </div>
+                </div>
+                 <!-- محصول 4 -->
+                 <div class="product-box">
+                    <div class="product-top">
+                        <span class="installment">خرید اقساطی</span>
+                        <span class="discount-counter">33:33:33</span>
+                    </div>
+                    <img src="Rectangle 5910.png" alt="محصول 1" class="product-image">
+                    <div class="color-options">
+                        <div class="color-circle red"></div>
+                        <div class="color-circle green"></div>
+                        <div class="color-circle blue"></div>
+                        <div class="color-circle black"></div>
+                    </div>
+                    <h3 class="product-title">مستطیلی، فلزی، اسپرت</h3>
+                    <div class="price-info">
+                        <span class="discount-percentage">40%</span>
+                        <span class="original-price">200,000 تومان</span>
+                        <span class="discounted-price">120,000 تومان</span>
+                    </div>
+                </div>
+            </div>
     </div>
-    <div class="box">
-        <div class="box-section review">
-            <p>نظر کاربر دوم: کیفیت مناسبی داشت.</p>
-        </div>
-        <div class="box-section other">
-            <span class="rating"></span>
-                <i class="star-icon">⭐</i>
-                <span class="rating-value">4.0</span>
-            </span>
-            <span class="customer-name">مینا احمدی</span>
-            
-        </div>
+</div>
+<!-- کارت محصول -->
+<!-- سوالات متداول -->
+<div class="container">
+    <div class="section">
+        <section class="faq-section">
+            <h2 class="faq-title">سوالات متداول</h2>
+            <div class="faq-content">
+              
+                <div class="faq-accordion">
+                    <button class="accordion">سوال 1</button>
+                    <div class="panel">
+                        <p>پاسخ به سوال 1</p>
+                    </div>
+                    <button class="accordion">سوال 2</button>
+                    <div class="panel">
+                        <p>پاسخ به سوال 2</p>
+                    </div>
+                    <button class="accordion">سوال 3</button>
+                    <div class="panel">
+                        <p>پاسخ به سوال 3</p>
+                    </div>
+                    <button class="accordion">سوال 4</button>
+                    <div class="panel">
+                        <p>پاسخ به سوال 4</p>
+                    </div>
+                    <button class="accordion">سوال 5</button>
+                    <div class="panel">
+                        <p>پاسخ به سوال 5</p>
+                    </div>
+                    <button class="accordion">سوال 6</button>
+                    <div class="panel">
+                        <p>پاسخ به سوال 6</p>
+                    </div>
+                    <button class="accordion">سوال 7</button>
+                    <div class="panel">
+                        <p>پاسخ به سوال 7</p>
+                    </div>
+                    <button class="accordion">سوال 8</button>
+                    <div class="panel">
+                        <p>پاسخ به سوال 8</p>
+                    </div>
+                </div>
+                <div class="faq-image">
+                    <img src="7.png" alt="سوالات متداول" width="389" height="486">
+                </div>
+            </div>
+        </section>
+
     </div>
-    <div class="box">
-        <div class="box-section review">
-            <p>نظر کاربر سوم: ارسال سریع و بسته‌بندی عالی!</p>
-        </div>
-        <div class="box-section other">
-            <span class="rating">
-                <i class="star-icon">⭐</i>
-                <span class="rating-value">5.0</span>
-            </span>
-            <span class="customer-name">محمد کاظمی</span>
-           
-        </div>
+</div>
+<!-- سوالات متداول -->
+
+<!-- نظرات کاربران -->
+<div class="container">
+    <div class="section">
+        <section class="reviews-section">
+            <h2 class="reviews-title">نظرات کاربران</h2>
+            <div class="reviews-container"> <!-- کانتینر برای باکس‌ها -->
+                <div class="review-box">
+                    <p class="review-text">این محصول واقعاً عالی است و به تمام نیازهای من پاسخ می‌دهد. بسیار راضی هستم!</p>
+                    <div class="review-footer">
+                        <div class="user-info">
+                            <i class="fa fa-user user-icon"></i> <!-- آیکن کاربر -->
+                            <span class="user-name">علی رضایی</span>
+                        </div>
+                        <div class="rating">
+                            <span class="score">4.5</span>
+                            <i class="fa fa-star star-icon"></i> <!-- آیکن ستاره -->
+                        </div>
+                      
+                    </div>
+                </div>
+                <div class="review-box">
+                    <p class="review-text">این محصول واقعاً عالی است و به تمام نیازهای من پاسخ می‌دهد. بسیار راضی هستم!</p>
+                    <div class="review-footer">
+                        <div class="user-info">
+                            <i class="fa fa-user user-icon"></i> <!-- آیکن کاربر -->
+                            <span class="user-name">علی رضایی</span>
+                        </div>
+                        <div class="rating">
+                            <span class="score">4.5</span>
+                            <i class="fa fa-star star-icon"></i> <!-- آیکن ستاره -->
+                        </div>
+                      
+                    </div>
+                </div>
+                <div class="review-box">
+                    <p class="review-text">این محصول واقعاً عالی است و به تمام نیازهای من پاسخ می‌دهد. بسیار راضی هستم!</p>
+                    <div class="review-footer">
+                        <div class="user-info">
+                            <i class="fa fa-user user-icon"></i> <!-- آیکن کاربر -->
+                            <span class="user-name">علی رضایی</span>
+                        </div>
+                        <div class="rating">
+                            <span class="score">4.5</span>
+                            <i class="fa fa-star star-icon"></i> <!-- آیکن ستاره -->
+                        </div>
+                    </div>
+                      
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
-</section>
-
-
-
+</div>
+<!-- نظرات کاربران -->
 <!-- ویژگی ها -->
+<div class="container">
+    <div class="section">
         <div class="icon-section">
             <h2>چرا مرکز بینایی سنجی و گالری حکیم نور؟</h2>
             <div class="icon-container">
                 <div class="icon-box">
                     <img src="crown.png" alt="آیکن 1" class="icon">
-                    <p>ویژگی 1</p>
+                    <p>ل چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی</p>
                 </div>
                 <div class="icon-box">
                     <img src="lovely.png" alt="آیکن 2" class="icon">
-                    <p>ویژگی 2</p>
+                    <p>ل چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی</p>
                 </div>
                 <div class="icon-box">
                     <img src="discount-shape.png" alt="آیکن 3" class="icon">
-                    <p>ویژگی 3</p>
+                    <p>ل چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی</p>
                 </div>
                 <div class="icon-box">
                     <img src="house-2.png" alt="آیکن 4" class="icon">
-                    <p>ویژگی 4</p>
+                    <p>ل چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی</p>
                 </div>
             </div>
         </div>
-        
-
+    </div>
+</div>
+<!-- ویژگی ها -->
+<!-- بیمه ها -->
+<div class="container">
+    <div class="section">
         <div class="insurance-section">
             <h2>بیمه‌های طرف قرارداد</h2>
             <div class="insurance-logos">
@@ -646,45 +593,49 @@
                 </div>
             </div>
         </div>
-        
-
+    </div>
+</div>
+<!-- بیمه ها -->
 
 <!-- مقالات -->
-<div class="maghale">
-    <h2>مقالات </h2>
+<div class="container">
+    <div class="section">
+        <div class="maghale">
+            <h2>مقالات </h2>
+        </div>
+        <section class="articles-section">
+            
+            <div class="article-box">
+                <img src="3.png" alt="مقاله 1">
+                <h3>عنوان مقاله 1</h3>
+                <p>این متن توضیح مختصری از مقاله است که حدود 20 کلمه دارد و کاربر را به خواندن بیشتر ترغیب می‌کند.</p>
+                <a href="#" class="read-more-btn"> مشاهده بیشتر</a>
+            </div>
+            <div class="article-box">
+                <img src="3.png" alt="مقاله 2">
+                <h3>عنوان مقاله 2</h3>
+                <p>این متن توضیح مختصری از مقاله است که حدود 20 کلمه دارد و کاربر را به خواندن بیشتر ترغیب می‌کند.</p>
+                <a href="#" class="read-more-btn"> مشاهده بیشتر</a>
+            </div>
+            <div class="article-box">
+                <img src="3.png" alt="مقاله 3">
+                <h3>عنوان مقاله 3</h3>
+                <p>این متن توضیح مختصری از مقاله است که حدود 20 کلمه دارد و کاربر را به خواندن بیشتر ترغیب می‌کند.</p>
+                <a href="#" class="read-more-btn"> مشاهده بیشتر</a>
+            </div>
+            <div class="article-box">
+                <img src="3.png" alt="مقاله 4">
+                <h3>عنوان مقاله 4</h3>
+                <p>این متن توضیح مختصری از مقاله است که حدود 20 کلمه دارد و کاربر را به خواندن بیشتر ترغیب می‌کند.</p>
+                <a href="#" class="read-more-btn"> مشاهده بیشتر</a>
+            </div>
+        </section>
+    </div>
 </div>
-<section class="articles-section">
-    
-    <div class="article-box">
-        <img src="3.png" alt="مقاله 1">
-        <h3>عنوان مقاله 1</h3>
-        <p>این متن توضیح مختصری از مقاله است که حدود 20 کلمه دارد و کاربر را به خواندن بیشتر ترغیب می‌کند.</p>
-        <a href="#" class="read-more-btn"> مشاهده بیشتر</a>
-    </div>
-    <div class="article-box">
-        <img src="3.png" alt="مقاله 2">
-        <h3>عنوان مقاله 2</h3>
-        <p>این متن توضیح مختصری از مقاله است که حدود 20 کلمه دارد و کاربر را به خواندن بیشتر ترغیب می‌کند.</p>
-        <a href="#" class="read-more-btn"> مشاهده بیشتر</a>
-    </div>
-    <div class="article-box">
-        <img src="3.png" alt="مقاله 3">
-        <h3>عنوان مقاله 3</h3>
-        <p>این متن توضیح مختصری از مقاله است که حدود 20 کلمه دارد و کاربر را به خواندن بیشتر ترغیب می‌کند.</p>
-        <a href="#" class="read-more-btn"> مشاهده بیشتر</a>
-    </div>
-    <div class="article-box">
-        <img src="3.png" alt="مقاله 4">
-        <h3>عنوان مقاله 4</h3>
-        <p>این متن توضیح مختصری از مقاله است که حدود 20 کلمه دارد و کاربر را به خواندن بیشتر ترغیب می‌کند.</p>
-        <a href="#" class="read-more-btn"> مشاهده بیشتر</a>
-    </div>
-</section>
-
-
+<!-- مقالات -->
 <!-- درباره حکیم نور -->
-
-
+<div class="container">
+    <div class="section">
         <div class="hakim-noor-section">
             <!-- بخش اول: عنوان -->
             <h2>حکیم نور کجاست؟</h2>
@@ -714,112 +665,96 @@
         
             <!-- بخش چهارم: دکمه ادامه مطلب -->
             <div class="read-more">
-                <a href="#" class="btn">صفحه</a>
+                <a href="#" class="btn">صقحه اصلی</a>
             </div>
         </div>
-        
-    
-    </main>
+    </div>
+</div>
+<!-- درباره حکیم نور -->
 
+</main>
 
-
-    <footer class="footer-section">
-        <!-- بخش اول: دو بخش زیر هم (لوگو، شبکه‌های اجتماعی و آدرس، شماره تماس) -->
-        <div class="footer-top">
-            <div class="footer-top-row">
-                
-                <div class="footer-logo">
-                    <img src="8.png" alt="لوگو">
-                </div>
-                <div class="social-icons">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-telegram"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                </div>
-                </div>
-            </div>
-            <div class="footer-contact">
-                
-                <div class="address">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <p>تهران، خیابان ولیعصر، شماره 123</p>
-                </div>
-                <div class="phone">
-                    <i class="fas fa-phone-alt"></i>
-                    <p>021-12345678</p>
-                </div>
-            </div>
-            </div>
-        </div>
-    
-        <!-- بخش دوم: سه ستون (محصولات، لینک‌های مفید، ای‌نماد) -->
-        <div class="footer-bottom">
+<!-- فووتر -->
+<footer class="footer-section">
+    <!-- بخش اول: دو بخش زیر هم (لوگو، شبکه‌های اجتماعی و آدرس، شماره تماس) -->
+    <div class="footer-top">
+        <div class="footer-top-row">
             
-            <div class="footer-column useful-links">
-                <h4>لینک‌های مفید</h4>
-                <ul>
-                    <li><a href="#"> درباره ما</a></li>
-                    <li><a href="#"> تماس با ما</a></li>
-                    <li><a href="#"> حریم خصوصی</a></li>
-                </ul>
+            <div class="footer-logo">
+                <img src="8.png" alt="لوگو">
             </div>
-            <div class="footer-column products">
-                <h4>محصولات</h4>
-                <ul>
-                    <li><a href="#"> محصول 1</a></li>
-                    <li><a href="#"> محصول 2</a></li>
-                    <li><a href="#"> محصول 3</a></li>
-                </ul>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-telegram"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
             </div>
-            <div class="footer-column enamad">
-                <h4>نماد اعتماد</h4>
-                <i class="fas fa-shield-alt"></i> <!-- آیکن نماد اعتماد -->
+            </div>
+        </div>
+        <div class="footer-contact">
+            
+            <div class="address">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>تهران، خیابان ولیعصر، شماره 123</p>
+            </div>
+            <div class="phone">
+                <i class="fas fa-phone-alt"></i>
+                <p>021-12345678</p>
+            </div>
+            <div class="phone">
+                <i class="fas fa-phone-alt"></i>
+                <p>021-12345678</p>
+            </div>
             </div>
         </div>
         </div>
-    </footer>
-    
-    
-   
-</body>
-</html>
+    </div>
+
+    <!-- بخش دوم: سه ستون (محصولات، لینک‌های مفید، ای‌نماد) -->
+    <div class="footer-bottom">
+        
+        <div class="footer-column useful-links">
+            <h4>لینک‌های مفید</h4>
+            <ul>
+                <li><a href="#"> درباره ما</a></li>
+                <li><a href="#"> تماس با ما</a></li>
+                <li><a href="#"> حریم خصوصی</a></li>
+            </ul>
+        </div>
+        <div class="footer-column products">
+            <h4>محصولات</h4>
+            <ul>
+                <li><a href="#"> محصول 1</a></li>
+                <li><a href="#"> محصول 2</a></li>
+                <li><a href="#"> محصول 3</a></li>
+            </ul>
+        </div>
+        <div class="footer-column enamad">
+            <h4>نماد اعتماد</h4>
+            <i class="fas fa-shield-alt"></i> <!-- آیکن نماد اعتماد -->
+        </div>
+    </div>
+    </div>
+</footer>
+<!-- فووتر -->
+
 <script>
-    // آکاردئون
-    document.querySelectorAll('.accordion-header').forEach(header => {
-    header.addEventListener('click', () => {
-        const item = header.parentElement;
-        const isActive = item.classList.contains('active');
+    document.querySelectorAll('.accordion').forEach(button => {
+    button.addEventListener('click', () => {
+        // Toggle the "active" class on the button
+        button.classList.toggle('active');
 
-        // بستن تمام آکاردئون‌ها
-        document.querySelectorAll('.accordion-item').forEach(i => {
-            i.classList.remove('active');
-            i.querySelector('.accordion-body').style.display = 'none'; // مخفی کردن متن
-        });
+        // Find the panel associated with the button
+        const panel = button.nextElementSibling;
 
-        // اگر سوال روی آن کلیک شده، آن را باز کنیم
-        if (!isActive) {
-            item.classList.add('active');
-            item.querySelector('.accordion-body').style.display = 'block'; // نمایش متن
+        // Toggle the panel's display style
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
         }
     });
 });
-
-// نظرات مشتریان
-
-let currentSlide = 0;
-
-function changeSlide(direction) {
-    const slides = document.querySelectorAll('.carousel-item');
-    slides[currentSlide].classList.remove('active');
-    
-    currentSlide = (currentSlide + direction + slides.length) % slides.length;
-    
-    slides[currentSlide].classList.add('active');
-}
-
-// به طور پیش‌فرض اولین اسلاید را نمایش می‌دهیم
-document.querySelector('.carousel-item').classList.add('active');
 
 </script>
 </body>
