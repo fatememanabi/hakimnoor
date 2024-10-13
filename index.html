@@ -12,15 +12,86 @@
 
     <header class="header">
         <div class="container">
+            <!-- مگامنو -->
+             <div id="mega-menu" class="megaMenu">
+                <div class="all-box">
+                    <div class="sec1">
+                        <ul>
+                            <li><a href="#">عینک آفتابی</a></li>
+                            <li><a href="#">عینک طبی</a></li>
+                            <li><a href="#">عینک چندکاوره</a></li>
+                            <li><a href="#">عدسی ها</a></li>
+                            <li><a href="#"></a>لنز</li>
+                            <li><a href="#"></a>اکسسوری</li>
+                            <li><a href="#"></a>عینک کامپیوتر</li>
+                            <li><a href="#"></a>عینک شب</li>
+                            <li><a href="#"></a>ورزشی</li>
+                        </ul>
+                    </div>
+                    <div class="sec2">
+                        <h3>جنسیت</h3>
+                        <ul>
+                            <li><a href="">مردانه</a></li>
+                            <li><a href="">زنانه</a></li>
+                            <li><a href="">کودکانه</a></li>
+                            <li><a href="">اسپرت</a></li>
+                        </ul>
+                    </div>
+                    <div class="sec3">
+                        <h3>جنس فریم</h3>
+                        <ul>
+                            <li><a href="">فلزی</a></li>
+                            <li><a href="">کائوچو</a></li>
+                            <li><a href="">استیت</a></li>
+                        </ul>
+                    </div>
+                    <div class="sec4">
+                        <h3>رنگ فریم</h3>
+                        <ul>
+                        <li><a href="">نقره ای </a></li>
+                        <li><a href="">مشکی</a></li>
+                        <li><a href="">لئوپارد</a></li>
+                        <li><a href="">قرمز</a></li>
+                        <li><a href="">قهوه ای</a></li>
+                        <li><a href="">رنگی</a></li>
+                    </ul>
+                    </div>
+                    <div class="sec5">
+                        <h3>شکل فریم</h3>
+                    </div>
+                    <div class="sec6">
+                        <h3>شکل صورت</h3>
+                        <ul>
+                            <li><a href="">مثلثی</a></li>
+                            <li><a href="">دایره</a></li>
+                            <li><a href="">مستطیل</a></li>
+                            <li><a href="">بیضی</a></li>
+                            <li><a href="">الماسی</a></li>
+                            <li><a href="">قلبی</a></li>
+                        </ul>
+                    </div>
+                    <div class="sec7">
+                        <h3>کاربردی</h3>
+                    </div>
+                    <div class="sec8">
+                        <img src="8.png" alt="">
+                    </div>
+                </div>
+             </div>
+             <!-- مگامنو -->
+
+</nav>
+
             <!-- منو بالایی -->
 
             <div class="menuOne">
                 <div class="logo">
                 <img src="8.png" alt="لوگو" />
             </div>
+            <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div> <!-- دکمه منو -->
             <nav class="menu">
                 <ul>
-                    <li><a href="#">دسته بندی محصولات </a></li>
+                    <li id="shop-btn"><a href="#">دسته بندی محصولات </a></li>
                     <li><a href="#"> تعیین نوبت آنلاین</a></li>
                     <li><a href="#">تماس با ما</a></li>
                     <li><a href="#">وبلاگ</a></li>
@@ -32,8 +103,8 @@
             <div class="actions">
                 
              
-                <i class="fas fa-shopping-cart"></i></a> <!-- آیکن سبد خرید -->
-                <a href="#" class="icon"><i class="fas fa-search"></i></a> <!-- آیکن جستجو -->
+               <a><img src="Buy.svg" alt=""></a> <!-- آیکن سبد خرید -->
+                <a href="#" class="icon"><img src="search-normal.svg" alt=""></a> <!-- آیکن جستجو -->
                 <a href="#" class="login-btn">ورود / ثبت‌نام</a>
               
             </div>
@@ -675,70 +746,112 @@
 </main>
 
 <!-- فووتر -->
-<footer class="footer-section">
-    <!-- بخش اول: دو بخش زیر هم (لوگو، شبکه‌های اجتماعی و آدرس، شماره تماس) -->
-    <div class="footer-top">
-        <div class="footer-top-row">
+<div class="container container-footer">
+    <footer class="footer-section">
+        <!-- بخش اول: دو بخش زیر هم (لوگو، شبکه‌های اجتماعی و آدرس، شماره تماس) -->
+        <div class="footer-top">
+            <div class="footer-top-row">
+                
+                <div class="footer-logo">
+                    <img src="8.png" alt="لوگو">
+                </div>
+                <div class="social-icons">
+                    <a href="#"><img src="Vector.svg" alt=""></a>
+                    <a href="#"><img src="telegram 2.svg" alt=""></a>
+                    <a href="#"><img src="instagram (1) 2.svg" alt=""></a>
+                    <a href="#"><img src="facebook 1.svg" alt=""></a>
+                </div>
+                </div>
+            </div>
+            <div class="footer-contact">
+                
+                <div class="address">
+                    <div class="location"><img src="location.svg" alt=""></div>
+                    
+                    <p>چیتگر، بلوار کوهک، نمای بیرونی مجموعه طوبی، بالای درب ورودی پارکینگ، واحد 15/1</p>
+                </div>
+                <div class="phones">
+                    <div class="phone">
+                        <img src="call.svg" alt="">
+                        <p>021-12345678</p>
+                    </div>
+                    <div class="phone">
+                        <img src="call.svg" alt="">
+                        <p>021-12345678</p>
+                    </div>
+                </div>
+               
+                </div>
+          
+    
+    
+        <!-- بخش دوم: سه ستون (محصولات، لینک‌های مفید، ای‌نماد) -->
+        <div class="footer-bottom">
+            <div class="footer-column products">
+                <h4>محصولات</h4>
+                <ul>
+                    <li><a href="#"> عینک طبی</a></li>
+                    <li><a href="#">عینک آفتابی</a></li>
+                    <li><a href="#">عینک زنانه</a></li>
+                    <li><a href="#">عینک بچگانه</a></li>
+                </ul>
+            </div>
+            <div class="footer-column useful-links">
+                <h4>لینک‌های مفید</h4>
+                <ul>
+                    <li><a href="#"> درباره ما</a></li>
+                    <li><a href="#"> تماس با ما</a></li>
+                    <li><a href="#">مجله عینک</a></li>
+                    <li><a href="#">نوبت دهی آنلاین</a></li>
+                    <li><a href="#">پشتیبانی</a></li>
+                
+                </ul>
+            </div>
             
-            <div class="footer-logo">
-                <img src="8.png" alt="لوگو">
-            </div>
-            <div class="social-icons">
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-telegram"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-            </div>
-            </div>
-        </div>
-        <div class="footer-contact">
-            
-            <div class="address">
-                <i class="fas fa-map-marker-alt"></i>
-                <p>تهران، خیابان ولیعصر، شماره 123</p>
-            </div>
-            <div class="phone">
-                <i class="fas fa-phone-alt"></i>
-                <p>021-12345678</p>
-            </div>
-            <div class="phone">
-                <i class="fas fa-phone-alt"></i>
-                <p>021-12345678</p>
-            </div>
+           
+            <div class="footer-column enamad">
+                <h4>نماد اعتماد</h4>
+                <img src="enamad.png" alt="">
             </div>
         </div>
         </div>
-    </div>
-
-    <!-- بخش دوم: سه ستون (محصولات، لینک‌های مفید، ای‌نماد) -->
-    <div class="footer-bottom">
-        
-        <div class="footer-column useful-links">
-            <h4>لینک‌های مفید</h4>
-            <ul>
-                <li><a href="#"> درباره ما</a></li>
-                <li><a href="#"> تماس با ما</a></li>
-                <li><a href="#"> حریم خصوصی</a></li>
-            </ul>
-        </div>
-        <div class="footer-column products">
-            <h4>محصولات</h4>
-            <ul>
-                <li><a href="#"> محصول 1</a></li>
-                <li><a href="#"> محصول 2</a></li>
-                <li><a href="#"> محصول 3</a></li>
-            </ul>
-        </div>
-        <div class="footer-column enamad">
-            <h4>نماد اعتماد</h4>
-            <i class="fas fa-shield-alt"></i> <!-- آیکن نماد اعتماد -->
-        </div>
-    </div>
-    </div>
-</footer>
+    </footer>
+</div>
+</div>
 <!-- فووتر -->
 
 <script>
+ // دریافت عناصر
+var shopButton = document.getElementById('shop-btn');
+var megaMenu = document.getElementById('mega-menu');
+
+// وقتی موس روی دکمه فروشگاه می‌رود، منو نمایش داده شود
+shopButton.addEventListener('mouseover', function() {
+  megaMenu.style.display = 'block';
+});
+
+// وقتی موس روی منوی مگا می‌رود، منو همچنان نمایش داده شود
+megaMenu.addEventListener('mouseover', function() {
+  megaMenu.style.display = 'block';
+});
+
+// وقتی موس از دکمه فروشگاه خارج می‌شود و روی منو نیست، منو مخفی شود
+shopButton.addEventListener('mouseout', function() {
+  setTimeout(function() {
+    if (!megaMenu.matches(':hover')) {
+      megaMenu.style.display = 'none';
+    }
+  }, 200); // تاخیر کوتاه برای جلوگیری از ناپدید شدن سریع منو
+});
+
+// وقتی موس از منوی مگا خارج می‌شود، منو مخفی شود
+megaMenu.addEventListener('mouseout', function() {
+  setTimeout(function() {
+    if (!megaMenu.matches(':hover') && !shopButton.matches(':hover')) {
+      megaMenu.style.display = 'none';
+    }
+  }, 200); // تاخیر کوتاه برای بررسی اینکه موس هنوز روی دکمه فروشگاه هست یا نه
+});
     document.querySelectorAll('.accordion').forEach(button => {
     button.addEventListener('click', () => {
         // Toggle the "active" class on the button
@@ -754,7 +867,26 @@
             panel.style.display = "block";
         }
     });
-});
+})
+
+var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+            600: {
+                slidesPerView: 1, /* در گوشی هر بار یک محصول نمایش داده شود */
+            }
+        }
+    });
+
+    function toggleMenu() {
+    const menu = document.querySelector('.menu');
+    menu.classList.toggle('active');
+}
 
 </script>
 </body>

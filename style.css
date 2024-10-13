@@ -106,11 +106,10 @@ body {
 }
 
 .container {
-    max-width: 1600px; 
+    max-width: 1224px; 
     margin: 0 auto;
     /* margin: 0px 88px;        با آرمین مطرح کنم  */
  
-
 }
 
 .section {
@@ -135,13 +134,14 @@ p {
 
 /* هدر */
 
-.header.comtainer{
+.header.container{
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row-reverse;
 }
 .menuOne {
+    max-width: 1224px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -152,7 +152,58 @@ p {
     /* max-width: 1224px; */
 
 }
+.megaMenu{
+    max-width: 1224px;
+    height: 397px;
+    text-align: center;
+    justify-content: space-between;
+    display: none; 
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    z-index: 1000;
+    }
+div#mega-menu {
+        margin-top: 100px;
+    }
 
+.megaMenu h3{
+    margin-bottom: 24px;
+    font-size: 14px;
+
+}
+.megaMenu li{
+    list-style: none;
+    margin-bottom: 16px;
+    font-size: 14px;
+    
+}
+.megaMenu a{
+    text-decoration: none;
+    color: #000;
+}
+.all-box{
+    display: flex;
+    gap: 24px;
+}
+.sec1{
+    width: 184px;
+}
+.sec2, .sec3, .sec4, .sec5, .sec6, .sec7{
+    width: 80px;
+}
+
+.sec8 img{
+    width: 376px !important;
+    height: 376px !important;
+
+}
+
+.menu-toggle{
+    display: none;
+}
 .logo img {
     height: 50px;
 }
@@ -180,7 +231,7 @@ nav.menu {
 .actions {
     display: flex;
     align-items: center;
-    
+ 
 }
 
 .fas.fa-shopping-cart{
@@ -915,10 +966,11 @@ i.fa.fa-user.user-icon {
 
 /* فووتر */
 .footer-section {
+    max-width: 1224px;
     /* height: 514px;   با آرمین مطرح کنم */
     color: #000;
     padding: 20px;
-  
+  justify-self: center;
 }
 
 .footer-top {
@@ -947,6 +999,11 @@ i.fa.fa-user.user-icon {
     transition: color 0.3s;
 }
 
+.container-footer{
+    max-width: 1224px;
+    margin: 0 auto;
+
+}
 
 .footer-contact {
     display: flex;
@@ -957,6 +1014,7 @@ i.fa.fa-user.user-icon {
     padding-bottom: 20px;
     gap: 36px;
 }
+
 
 .footer-contact div {
     display: flex;
@@ -974,10 +1032,11 @@ i.fa.fa-user.user-icon {
     justify-content: space-between;
 
     margin: 0 auto;
-    .footer-bottom {
+}
+.footer-bottom {
         margin-top: 21px;
     }
-}
+
 
 .footer-column {
     flex: 1;
@@ -995,7 +1054,7 @@ i.fa.fa-user.user-icon {
 }
 
 .footer-column ul li {
-    margin-bottom: 10px;
+    margin-bottom: 16px;
 }
 
 .footer-column ul li a {
@@ -1022,6 +1081,7 @@ i.fa.fa-user.user-icon {
 }
 .footer-column.useful-links {
     text-align: right;
+    margin-right: -24px;
 }
 
 .footer-column.enamad {
@@ -1030,6 +1090,57 @@ i.fa.fa-user.user-icon {
 
 /* ریسپانسیو */
 @media only screen and (max-width: 600px) {
+    .menuOne {
+        display: flex; /* استفاده از flex برای چیدمان */
+        justify-content: space-between; /* فاصله بین عناصر */
+        align-items: center; /* تراز کردن عمودی عناصر */
+        padding: 10px; /* فاصله داخلی */
+        flex-direction: row; /* نمایش در یک ردیف */
+    }
+
+    .logo {
+      
+        text-align: center; 
+        order: 2;
+    }
+
+    .actions {
+        display: flex; 
+        align-items: center;
+        position: relative;
+    }
+
+    .actions .fa-shopping-cart {
+        margin-right: 10px; 
+        order: 3; 
+    }
+
+    .menu-toggle {
+        order: 1;
+        margin-left: auto; 
+        cursor: pointer; 
+        font-size: 24px;
+    }
+
+   
+    .actions .icon,
+    .actions .login-btn {
+        display: none; 
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu.active {
+        display: block;
+    }
+
+    .menuTwo{
+        display: none;
+    }
+
+
     .slider {
         height: 200px; 
         margin-bottom: 15px;
@@ -1205,6 +1316,85 @@ i.fa.fa-user.user-icon {
     .faq-image {
         display: none; 
     }
+
+
+    .reviews-container {
+        display: block; /* تغییر به حالت بلوکی در موبایل */
+    }
+
+    .review-box {
+        width: 100%; /* هر باکس تمام عرض را در موبایل بگیرد */
+        margin-bottom: 20px; /* فاصله بین باکس‌ها */
+        height: 266px;
+    }
+
+    /* فقط نمایش باکس اول */
+    .review-box:nth-child(n+2) {
+        display: none; /* پنهان کردن باکس‌های دوم به بعد */
+    }
+    .icon-container {
+        flex-direction: column; /* تغییر چیدمان به ستون */
+        align-items: center;
+    }
+
+    .icon-box {
+        width: 100%; /* تمام عرض */
+        margin-bottom: 16px; /* فاصله بین باکس‌ها */
+    }
+
+    .icon-section h2 {
+        text-align: center; /* تراز کردن تیتر وسط */
+    }
+
+    .article-box {
+        display: none; /* همه باکس‌ها را مخفی می‌کند */
+    }
+    .article-box:first-child {
+        display: block; /* فقط اولین باکس را نمایش می‌دهد */
+    }
+    .image-row {
+        flex-direction: column; /* تغییر جهت به عمودی */
+        align-items: center; /* مرکز کردن محتوا */
+    }
+    
+    .image-box {
+        width: 100%; /* عرض کامل برای عکس */
+        display: none; /* پنهان کردن همه باکس‌ها */
+    }
+
+    .image-box:first-child {
+        display: block; /* فقط اولین باکس را نمایش می‌دهد */
+    }
+
+    .description {
+        padding: 0; /* padding را به صفر تغییر می‌دهد */
+    }
+    .footer-top {
+        flex-direction: column; /* ستون‌ها به صورت عمودی بچینند */
+    }
+
+    .footer-contact {
+        flex-direction: column; /* ستون‌ها به صورت عمودی بچینند */
+        align-items: center; /* مرکز کردن محتوا */
+    }
+
+    .footer-bottom {
+        flex-direction: row; /* ستون‌ها به صورت عمودی بچینند */
+        align-items: right; /* مرکز کردن محتوا */
+    }
+    .footer-logo{
+        display: none;
+    }
+    .social-icons{
+        text-align: center;
+    }
+ .footer-column.products{
+    width: 40% ;
+ }
+ .footer-column.useful-links{
+    width: 40%;
+ }
+
 
 }
 
